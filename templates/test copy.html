@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!---google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Lobster&family=Lobster+Two&family=Montserrat&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Ayurveda</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">Ayurveda</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="test.html">Test</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <form action="{{ url_for('predict')}}" method="post">
+            <div>
+            <h3>Body Size</h3>
+            <br>
+            <select name="1" id="fuel" required="required">
+                <option value="Slim">Slim</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+            </div>
+            <div>
+                <h3>Body Weight</h3>
+                <select name="2" id="fuel" required="required">
+                <option value="low, difficulties in gaining weight">low, difficulties in gaining weight</option>
+                <option value="moderate, no difficulties in gaining or loosing weight
+
+                ">moderate, no difficulties in gaining or loosing weight
+
+                </option>
+                <option value="heavy, difficulties in loosing weight">heavy, difficulties in loosing weight</option>
+                </select>
+            </div>
+            <div>
+                <h3>Height</h3>
+                <select name="3" id="fuel" required="required">
+                <option value="Tall or short">Tall or short</option>
+                <option value="Average">Average</option>
+                <option value="Thin & sturdy / short & stocky">Thin & sturdy / short & stocky</option>
+                </select>
+            </div>
+            <div>
+                <h3>Bone Structure</h3>
+                <select name="4" id="fuel" required="required">
+                <option value="Light, small bones, Prominent joints">Light, small bones, Prominent joints</option>
+                <option value="Medium bone structure">Medium bone structure</option>
+                <option value="Large, broad shoulders, Heavy bone structure">Large, broad shoulders, Heavy bone structure</option>
+                </select>
+            </div>
+            <div>
+                <h3>Com1lexion</h3>
+                <select name="5" id="fuel" required="required">
+                <option value=" Dark complexion, Tans easily"> Dark complexion, Tans easily</option>
+                <option value="Fair skin, sun burns easily">Fair skin, sun burns easily</option>
+                <option value="White, pale, tans evenly">White, pale, tans evenly</option>
+                </select>
+            </div>
+            <div>
+                <h3>General feel of skin</h3>
+                <select name="6" id="fuel" required="required">
+                <option value="Thin and dry, cool to touch, rough">Thin and dry, cool to touch, rough</option>
+                <option value="Smooth and warm, Oily T-zone">Smooth and warm, Oily T-zone</option>
+                <option value="thick and moist/greasy, cold">thick and moist/greasy, cold</option>
+                </select>
+            </div>
+            <div>
+                <h3>Texture of Skin</h3>
+                <select name="7" id="fuel" required="required">
+                <option value="Dry, pigmentation and aging">Dry, pigmentation and aging</option>
+                <option value="Freckles, many moles, redness, rashes and acne">Freckles, many moles, redness, rashes and acne</option>
+                <option value="Soft, glowing and youthful">Soft, glowing and youthful</option>
+                </select>  
+            </div>
+            <div>
+                <h3>Hair Color</h3>
+                <select name="8" id="fuel" required="required">
+                <option value="Dull, black, brown">Dull, black, brown</option>
+                <option value="Red, light brown, yellow">Red, light brown, yellow</option>
+                <option value="Brown">Brown</option>
+                </select>
+            </div>
+            <div>
+                <h3>A11earance of Hair</h3>
+                <select name="9" id="fuel" required="required">
+                    <option value="Dry, Black Knotted, Brittle">Dry, Black Knotted, Brittle</option>
+                    <option value="Straight, Oily">Straight, Oily</option>
+                    <option value="Thick, Curly">Thick, Curly</option>
+                </select>   
+            </div>
+            <div>
+                <h3>Sha1e of face</h3>
+                <select name="10" id="fuel" required="required">
+                    <option value="Long, angular,Thin">Long, angular,Thin</option>
+                    <option value="Heart-shaped,pointed chin">Heart-shaped,pointed chin</option>
+                    <option value="Large, round, Full">Large, round, Full</option>
+                </select>   
+            </div>
+            <div>
+            <h3>Eyes</h3>
+            <select name="11" id="fuel" required="required">
+                <option value="Small, active, darting, dark eyes">Small, active, darting, dark eyes</option>
+                <option value="Medium sized, penetrating, light sensetivity eyes">Medium sized, penetrating, light sensetivity eyes</option>
+            <option value="Big, round, beautiful glowing eyes">Big, round, beautiful glowing eyes</option>
+            </select>
+            </div>
+            <div>
+                <h3>Eyelashes</h3>
+            <select name="12" id="fuel" required="required">
+                <option value="Scanty eye lashes">Scanty eye lashes</option>
+                <option value="Moderate eye lashes">Moderate eye lashes</option>
+                <option value="Thick/ Fused eye lashes">Thick/ Fused eye lashes</option>
+            </select>
+            </div>
+            <div>
+                <h3>Blinking of Eyes</h3>
+            <select name="13" id="fuel" required="required">
+                <option value="Excessive Blinking">Excessive Blinking</option>
+                <option value="Moderate Blinking">Moderate Blinking</option>
+                <option value="More or less stable">More or less stable</option>
+            </select>
+            </div>
+            <div>
+                <h3>Cheeks</h3>
+            <select name="14" id="fuel" required="required">
+                <option value="Wrinkled, Sunken">Wrinkled, Sunken</option>
+                <option value="Smooth, Flat">Smooth, Flat</option>
+                <option value="Rounded, Plump">Rounded, Plump</option>
+            </select>
+            </div>
+            <div>
+                <h3>Nose</h3>
+            <select name="15" id="fuel" required="required">
+                <option value="Crooked, Narrow, small">Crooked, Narrow, small</option>
+                <option value="Pointed, Average">Pointed, Average</option>
+                <option value="Rounded, Large open nostrils">Rounded, Large open nostrils</option>
+            </select>
+            </div>
+            <div>
+                <h3>Teeth and gums</h3>
+            <select name="16" id="fuel" required="required">
+                <option value="Irregular, Protruding teeth, Receding gums">Irregular, Protruding teeth, Receding gums</option>
+                <option value="Medium sized teeth, Reddish gums">Medium sized teeth, Reddish gums</option>
+                <option value="Big, White, Strong teeth, Hearty hums">Big, White, Strong teeth, Hearty hums</option>
+            </select>
+            </div>
+            <div>
+                <h3>Lips</h3>
+            <select name="17" id="fuel" required="required">
+                <option value="Tight, thin, dry lips which chaps easily">Tight, thin, dry lips which chaps easily</option>
+                <option value="Lips are soft, medium-sized">Lips are soft, medium-sized</option>
+                <option value="Lips are large, soft, pink and full">Lips are large, soft, pink and full</option>
+            </select>
+            </div>
+            <div>
+                <h3>Nails</h3>
+            <select name="18" id="fuel" required="required">
+                <option value="Dry, Rough, Brittle, Break easily">Dry, Rough, Brittle, Break easily</option>
+                <option value="Sharp, Flexible, pink, Lustrous">Sharp, Flexible, pink, Lustrous</option>
+                <option value="Thick, Oily, Smooth, Polished">Thick, Oily, Smooth, Polished</option>
+            </select>
+            </div>
+            <div>
+                <h3>Appetite</h3>
+                <select name="19" id="fuel" required="required">
+                    <option value="Irregular, Scanty">Irregular, Scanty</option>
+                    <option value="Strong, Unbearable">Strong, Unbearable</option>
+                    <option value="Slow but steady">Slow but steady</option>
+                </select>
+            </div>
+            <div>
+                <h3>Liking tastes</h3>
+                <select name="20" id="fuel" required="required">
+                    <option value="Sweet / Sour / Salty">Sweet / Sour / Salty</option>
+                    <option value="Sweet / Bitter / Astringent">Sweet / Bitter / Astringent</option>
+                    <option value="Pungent / Bitter / Astringent">Pungent / Bitter / Astringent</option>
+                </select> 
+            </div>
+            <br><br><button id="sub" type="submit ">Predict</button>
+            <br>
+
+        </form>
+    </div>
+
+
+    <footer>
+        <p>Made by Students of VJTI</p>
+    </footer>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
