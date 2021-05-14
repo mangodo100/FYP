@@ -22,6 +22,10 @@ def test():
 def login():
     return render_template('login.html')
 
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
+
 standard_to = StandardScaler()
 @app.route("/test", methods=['POST'])
 def predict():
