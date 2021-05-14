@@ -1,4 +1,4 @@
-/* *, *:before, *:after{
+*, *:before, *:after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,7 +11,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  background: -webkit-linear-gradient(left, #7579ff, #b224ef);
+  /* background: -webkit-linear-gradient(left, #7579ff, #b224ef); */
   font-family: 'Nunito', sans-serif;
 }
 
@@ -309,4 +309,4 @@ button{
 .cont.s-signup .sign-up{
   -webkit-transform:translate3d(0, 0, 0);
           transform:translate3d(0, 0, 0);
-} */
+}

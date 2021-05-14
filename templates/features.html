@@ -4,879 +4,761 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <!---google fonts -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&family=Lobster&family=Lobster+Two&family=Montserrat&family=Poppins&display=swap"
         rel="stylesheet">
-    <!-- <link rel="stylesheet" href="../static/style.css"> -->
-    <style>
-        /* font-family: 'Heebo',
-sans-serif;
-font-family: 'Lobster',
-cursive;
-font-family: 'Lobster Two',
-cursive;
-font-family: 'Montserrat',
-sans-serif;
-font-family: 'Poppins',
-sans-serif;
-font-family: 'Bebas Neue',
-cursive;
-font-family: 'Berkshire Swash',
-cursive;
-font-family: 'Cinzel',
-serif;
-*/
-
-body{
-    box-sizing: border-box;
-}
-
-.navbar-brand{
-    font-family: 'Lobster Two',
-    cursive;
-    color: #fff !important;
-    /* padding-left: 60px; */
-    font-size: 2rem;
-}
-
-
-.navbarr{
-    background-color: #5B174C;
-}
-
-.heading{
-    color: black !important;
-    font-family: 'Lobster Two',
-    cursive;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.nav-link{
-    font-family: 'Poppins',
-    sans-serif;
-    color: #fff !important; 
-    padding: 0 20px !important;
-    font-size: 1rem;
-}
-
-.med{
-    width: 100%;
-    height: 50vh;
-}
-
-.front{
-    width: 100%;
-    height: 100vh;
-    /* background-color: #330000;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D18'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%23FA3' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23FA3' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.4'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: cover; */
-    background-image: url('./images/bg.svg');
-}
-
-h1{
-    font-size: 6rem;
-    font-family: 'Berkshire Swash',
-    cursive;
-    color: #5B174C;
-}
-
-h2{
-    color: #fff;
-    font-family: 'Cinzel',
-    serif;
-    font-size: 4.5rem;
-}
-
-.par{
-    padding-left: 25px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    color: #fff;
-    font-size: 2rem;
-    font-family: 'Lobster Two',
-    cursive;
-}
-
-
-.dosha{
-    width: 600px;
-    height: 200px;
-}
-
-.jumbo{
-    padding-top: 150px;
-}
-
-.test{
-    padding-left: 250px;
-    
-}
-
-.test1{
-    padding: 150px 0 0 250px;
-    
-}
-
-.but{
-    background: #5b174c;
-    color: #ffffff;
-    display: inline-block;
-    text-align: center;
-    padding: 10px 40px;
-    text-decoration: none;
-    font-size: 2.5rem;
-    margin-left: 35px;
-    font-family: 'Lobster Two',
-    cursive;
-}
-
-.middle{
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-h3{
-    padding-left: 50px;
-    font-size: 3.5rem;
-    font-family: 'Heebo',
-    sans-serif;
-}
-
-.intro{
-    padding: 0 50px;
-    font-size: 1.2rem;
-    font-family: 'Heebo',
-    sans-serif; 
-}
-
-.last{
-    background-image: linear-gradient(135deg,#D93F5E, #5B174C );
-    color: #fff;
-    padding: 75px 0;
-}
-
-.space{
-    width: 100%;
-    height: 60px;
-}
-
-.name{
-    
-}
-    </style>
-    <title>Ayurveda Test</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Berkshire+Swash&family=Cinzel:wght@900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0bb3c5ee7e.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Ayurveda</title>
 </head>
 
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index">Ayurveda</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-light navbarr">
+        <div class="container">
+            <a class="navbar-brand" href="/">Ayurveda</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="features">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="test">Test</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="login">Login</a>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="/">Home</a>
+                    <a class="nav-link" href="features">Features</a>
+                    <a class="nav-link" href="test">Test</a>
+                    <a class="nav-link" href="login">Login</a>
+                </div>
             </div>
-        </nav>
-    </div>
+        </div>
+    </nav>
 
-
-    <div class="container">
-        <h2>Ayurveda Dosha Test — find out your type.</h2>
-        <p>Knowing your personal mind-body-constitution is crucial to make Ayurveda work for you since its effectiveness
-            is based on treating people individually. You see, every person is influenced by all three Doshas, but they
+    <div class="container fe_body">
+        <h2 class="heading">Ayurveda Dosha Test — find out your type.</h2>
+        <p>Knowing your personal mind-body-constitution is crucial to make Ayurveda work for you since its
+            effectiveness
+            is based on treating people individually. You see, every person is influenced by all three Doshas, but
+            they
             manifest differently in everyone of us.
 
-            This Ayurveda Test will give you a hint about your “Prakriti” (also called Prakruti in many places) — your
-            birth constitution that doesn’t change throughout your life. It is made up from your parents’ disposition
-            and determines your main physical characteristics and emotional behaviour. So knowing your ayurvedic type
+            This Ayurveda Test will give you a hint about your “Prakriti” (also called Prakruti in many places) —
+            your
+            birth constitution that doesn’t change throughout your life. It is made up from your parents’
+            disposition
+            and determines your main physical characteristics and emotional behaviour. So knowing your ayurvedic
+            type
             will help you figuring out a diet and lifestyle that are perfect for you personally and how to find the
             remedies that work for you.
-            It will also help you understanding yourself better; why you are the way you are and act the way you act.
+            It will also help you understanding yourself better; why you are the way you are and act the way you
+            act.
             However online tests can never give you perfectly accurate results, so once you know your Doshas keep
             observing yourself to deepen your knowledge about your Prakriti.</p>
+
+        <div class="container">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Vata</td>
+                        <td>Pitta</td>
+                        <td>Kapha</td>
+                    </tr>
+                </thead>
+                <!-- ngRepeat: category in QCtrl.questions -->
+                <tbody ng-repeat="category in QCtrl.questions" ng-class="category.css" class="ng-scope body">
+                    <tr class="category">
+                        <td></td>
+                        <th colspan="3">
+                            <div class="ng-binding">Physical Constitution</div>
+                        </th>
+                    </tr>
+
+                    <!-- ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">frame</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            thin, lanky, boney and taller or shorter than average
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            average build and size, weight centered in middle
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            heavy, stocky, broad and either very tall or very short
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">weight</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            low, difficulties in gaining weight
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            moderate, no difficulties in gaining or loosing weight
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            heavy, difficulties in loosing weight
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">appetite</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            unpredictable, irregular, variable
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            strong, cannot skip meals and will have to eat again after 3 or 4 hours
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            constant but can skip meals easily and tolerate hunger and thirst
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">amount of food</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            very variable, sometimes a lot, sometimes a little
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            usually a lot, can eat large quantities at once
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            usually not much, can feel full with a little
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">skin texture</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            thin and dry, cool to touch, rough
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            smooth and warm, oily T-zone
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            thick and moist/greasy, cold
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">complexion</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            dark, tans easily
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            fair with freckles, moles, prone to sunburn
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            pale and hardly tans
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">hair</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            dry, brittle and curly/frizzy
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            soft, straight and fine
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            thick and weavy, tends to get greasy
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">eyes</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            small and dry, blink a lot
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            penetrating gaze, reddish sclerae
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            large and moist, white sclerae
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">lips</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            thin and dry, often chapped
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            pink and soft
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            full and smooth
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">teeth</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            crooked, irregular with receding gums
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            yellowish, gums easily bleed
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            large, white and straight
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">fingers &amp; nails</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            delicate, small and long fingers with chipped nails
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            regular fingers with pink and soft nails
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            wide, angular fingers with large and hard nails
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">voice</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            low volume, hoarse and cracking
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            loud and sharp
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            pleasant, harmonious, low pitch
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">body temperature</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            feels colder than others; cold feet and hands
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            feels hotter that others; palms, feet and face warm or hot
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            normal, palms and feet cool
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">perspiration</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            scanty with little odour
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            intense during physical activities or when it gets hot, sharp smell
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            constant and moderate, sweet smell
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">sleep</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            light sleeper, awakes easily and may have difficulties falling asleep
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            sleeps deep and even, hardly needs more than 8 hours sleep
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            long and sound sleeper, has difficulties awakening even after long hours of sleep
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">walk</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            fast with a light step
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            average speed, determined step
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            slow pace, steady step
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">weather</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            prefers warm climates, dislikes windy dry and cold days
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            prefers cooler climates, dislikes heat
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            adaptable to most climates but can't stand cold and rainy days
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+
+                </tbody><!-- end ngRepeat: category in QCtrl.questions -->
+                <tbody ng-repeat="category in QCtrl.questions" ng-class="category.css" class="ng-scope mind">
+                    <tr class="category">
+                        <td></td>
+                        <th colspan="3">
+                            <div class="ng-binding">Mental Constitution</div>
+                        </th>
+                    </tr>
+
+                    <!-- ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">temperament</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            lively and enthusiastic, likes to change
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            purposeful and intense, likes to convince
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            easy going and accepting, likes to support
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">social</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            independent but insecure, nervous in new situations
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            outgoing, assertive, accessible, leader nature
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            follower, good listener, accommodating, lots of friends
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">negative traits</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            uncertain and jumpy
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            furious and bossy
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            greedy and possessive
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">under stress</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            becomes anxious and worried
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            becomes irritable and aggressive
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            becomes withdrawn and passive
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">talk</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            very talkative; fast, diffused speaking
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            talkative, good speaker, good at arguments
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            slow, steady speaker, limited speech, cautious
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">memory</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            short attention span, forgets things easily
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            moderate, remembers details clearly and forgets rather slowly
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            excellent long-term memory, hardly forgets anything
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">learning type</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            mainly verbal, might have difficulties in truly understanding
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            lots of visual imagery, learns efficiently
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            feelings and emotions involved, usually grasping late but ultimately understandig well
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">dreams</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            flying, searching, restless, prone to nightmares
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            fighting, violent, passionate and colorful
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            few, sentimental, romantic, watery, sad
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">love</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            falls in and out of love easily
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            intense, passionate love affairs
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            long term relationships full of affection and love
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">creativity</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            distinct and detailed ideas in many areas
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            inventive in technical or scientific areas
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            creative when dealing with business things
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">decisions</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            making decisions often feels like a problematic and difficult process
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            makes decisions quickly and determined
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            take their time to think things through
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">interests</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            travelling, dancing, arts
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            sports, politics, luxury
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            business, food, literature
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">finances</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            spends easily, doesn't save much and often feels poor
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            spends money on certain chosen things, luxury
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            saves money, spends freely on food and entertainment
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">activity</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            hyperactive, restless
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            active, enjoys exercise and competition
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            somewhat lethargic
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">sex drive</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            extreme or none at all
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            passionate and dominating
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            constant and loyal
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">beliefs</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            erratic, rebel, changing
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            determined, strong principles
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            permanent, doesn't change easily
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+                    <tr class="question ng-scope" ng-repeat="question in category.qlist">
+                        <th class="ng-binding">lifestyle</th>
+
+                        <!-- ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
+                            erratic, free and unattached
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
+                            bustling, well planned
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+                        <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
+                            ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
+                            regular, gets into a rut easily
+                        </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
+
+                    </tr><!-- end ngRepeat: question in category.qlist -->
+
+                </tbody><!-- end ngRepeat: category in QCtrl.questions -->
+            </table>
+        </div>
+
     </div>
 
-    <div class="container table-data">
-        <table class="questions ng-scope">
-            <thead>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>Vata</td>
-                    <td>Pitta</td>
-                    <td>Kapha</td>
-                </tr>
-            </thead>
-            <!-- ngRepeat: category in QCtrl.questions -->
-            <tbody ng-repeat="category in QCtrl.questions" ng-class="category.css" class="ng-scope body">
-                <tr class="category">
-                    <td></td>
-                    <th colspan="3">
-                        <div class="ng-binding">Physical Constitution</div>
-                    </th>
-                </tr>
-
-                <!-- ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">frame</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        thin, lanky, boney and taller or shorter than average
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        average build and size, weight centered in middle
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        heavy, stocky, broad and either very tall or very short
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">weight</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        low, difficulties in gaining weight
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        moderate, no difficulties in gaining or loosing weight
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        heavy, difficulties in loosing weight
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">appetite</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        unpredictable, irregular, variable
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        strong, cannot skip meals and will have to eat again after 3 or 4 hours
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        constant but can skip meals easily and tolerate hunger and thirst
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">amount of food</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        very variable, sometimes a lot, sometimes a little
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        usually a lot, can eat large quantities at once
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        usually not much, can feel full with a little
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">skin texture</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        thin and dry, cool to touch, rough
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        smooth and warm, oily T-zone
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        thick and moist/greasy, cold
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">complexion</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        dark, tans easily
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        fair with freckles, moles, prone to sunburn
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        pale and hardly tans
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">hair</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        dry, brittle and curly/frizzy
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        soft, straight and fine
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        thick and weavy, tends to get greasy
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">eyes</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        small and dry, blink a lot
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        penetrating gaze, reddish sclerae
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        large and moist, white sclerae
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">lips</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        thin and dry, often chapped
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        pink and soft
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        full and smooth
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">teeth</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        crooked, irregular with receding gums
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        yellowish, gums easily bleed
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        large, white and straight
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">fingers &amp; nails</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        delicate, small and long fingers with chipped nails
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        regular fingers with pink and soft nails
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        wide, angular fingers with large and hard nails
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">voice</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        low volume, hoarse and cracking
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        loud and sharp
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        pleasant, harmonious, low pitch
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">body temperature</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        feels colder than others; cold feet and hands
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        feels hotter that others; palms, feet and face warm or hot
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        normal, palms and feet cool
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">perspiration</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        scanty with little odour
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        intense during physical activities or when it gets hot, sharp smell
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        constant and moderate, sweet smell
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">sleep</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        light sleeper, awakes easily and may have difficulties falling asleep
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        sleeps deep and even, hardly needs more than 8 hours sleep
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        long and sound sleeper, has difficulties awakening even after long hours of sleep
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">walk</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        fast with a light step
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        average speed, determined step
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        slow pace, steady step
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">weather</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        prefers warm climates, dislikes windy dry and cold days
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        prefers cooler climates, dislikes heat
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        adaptable to most climates but can't stand cold and rainy days
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-
-            </tbody><!-- end ngRepeat: category in QCtrl.questions -->
-            <tbody ng-repeat="category in QCtrl.questions" ng-class="category.css" class="ng-scope mind">
-                <tr class="category">
-                    <td></td>
-                    <th colspan="3">
-                        <div class="ng-binding">Mental Constitution</div>
-                    </th>
-                </tr>
-
-                <!-- ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">temperament</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        lively and enthusiastic, likes to change
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        purposeful and intense, likes to convince
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        easy going and accepting, likes to support
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">social</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        independent but insecure, nervous in new situations
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        outgoing, assertive, accessible, leader nature
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        follower, good listener, accommodating, lots of friends
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">negative traits</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        uncertain and jumpy
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        furious and bossy
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        greedy and possessive
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">under stress</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        becomes anxious and worried
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        becomes irritable and aggressive
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        becomes withdrawn and passive
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">talk</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        very talkative; fast, diffused speaking
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        talkative, good speaker, good at arguments
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        slow, steady speaker, limited speech, cautious
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">memory</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        short attention span, forgets things easily
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        moderate, remembers details clearly and forgets rather slowly
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        excellent long-term memory, hardly forgets anything
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">learning type</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        mainly verbal, might have difficulties in truly understanding
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        lots of visual imagery, learns efficiently
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        feelings and emotions involved, usually grasping late but ultimately understandig well
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">dreams</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        flying, searching, restless, prone to nightmares
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        fighting, violent, passionate and colorful
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        few, sentimental, romantic, watery, sad
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">love</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        falls in and out of love easily
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        intense, passionate love affairs
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        long term relationships full of affection and love
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">creativity</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        distinct and detailed ideas in many areas
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        inventive in technical or scientific areas
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        creative when dealing with business things
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">decisions</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        making decisions often feels like a problematic and difficult process
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        makes decisions quickly and determined
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        take their time to think things through
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">interests</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        travelling, dancing, arts
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        sports, politics, luxury
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        business, food, literature
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">finances</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        spends easily, doesn't save much and often feels poor
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        spends money on certain chosen things, luxury
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        saves money, spends freely on food and entertainment
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">activity</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        hyperactive, restless
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        active, enjoys exercise and competition
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        somewhat lethargic
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">sex drive</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        extreme or none at all
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        passionate and dominating
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        constant and loyal
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">beliefs</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        erratic, rebel, changing
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        determined, strong principles
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        permanent, doesn't change easily
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-                <tr class="question ng-scope" ng-repeat="question in category.qlist">
-                    <th class="ng-binding">lifestyle</th>
-
-                    <!-- ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="vata">
-                        erratic, free and unattached
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="pitta">
-                        bustling, well planned
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-                    <td ng-repeat="(dosha, answer) in question.answers" ng-controller="AnswerController"
-                        ng-click="toggleSelected()" ng-class="{ selected: selected }" class="kapha">
-                        regular, gets into a rut easily
-                    </td><!-- end ngRepeat: (dosha, answer) in question.answers -->
-
-                </tr><!-- end ngRepeat: question in category.qlist -->
-
-            </tbody><!-- end ngRepeat: category in QCtrl.questions -->
-        </table>
-    </div>
-
-    <footer>
-        <p>Made by Students of VJTI</p>
+    
+
+  
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i
+                        class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i
+                        class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i
+                        class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i
+                        class="fab fa-instagram"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white">Students of VJTI</a>
+        </div>
+        <!-- Copyright -->
     </footer>
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
     </script>
 
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>

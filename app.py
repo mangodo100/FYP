@@ -249,20 +249,20 @@ def predict():
         output=model1.predict([[value1,value2,value3,value4,value5,value6,value7,value8,value9,value10,value11,value12,value13,value14,value15,value16,value17,value18,value19,value20,value21,value22,value23,value24,value25,value26,value27,value28,value29,value30,value31,value32,value33,value34,value35,value36,value37,value38,value39,value40]])
         # output=round(prediction[0],2)
         if output==0:
-            return render_template('test.html',prediction_text="Prakruti Type : 1".format(output))
+            return render_template('test.html',prediction_text="Prakruti Type : VATT".format(output))
         elif output==1:
-            return render_template('test.html',prediction_text="Prakruti Type : 2".format(output))
+            return render_template('test.html',prediction_text="Prakruti Type : PITT".format(output))
         elif output==2:
-            return render_template('test.html',prediction_text="Prakruti Type : 3".format(output))
+            return render_template('test.html',prediction_text="Prakruti Type : KAFF".format(output))
         elif output==3:
-            return render_template('test.html',prediction_text="Prakruti Type : 4".format(output))
+            return render_template('test.html',prediction_text="Prakruti Type : VATT-PITT".format(output))
         elif output==4:
-            return render_template('test.html',prediction_text="Prakruti Type : 5".format(output))
+            return render_template('test.html',prediction_text="Prakruti Type : VATT-KAFF".format(output))
         elif output==5:
-            return render_template('test.html',prediction_text="Prakruti Type : 6".format(output))
+            return render_template('test.html',prediction_text="Prakruti Type : PITT-KAFF".format(output))
     else:
         return render_template('test.html')
 
 if __name__ == '__main__':
-    app.run(host="localhost", port=8000, debug=True)
+    app.run(debug=True)
 
